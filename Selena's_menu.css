@@ -1,7 +1,6 @@
 /* ======================================
-  Selena's Salvadorian Restaurant Menu
-  Clean & Mobile-Friendly Stylesheet
-  ====================================== */
+   Selena's Salvadorian Restaurant Menu
+   ====================================== */
 
 /* Universal box sizing */
 * {
@@ -11,29 +10,28 @@
 /* Body setup */
 html, body {
   overflow-x: hidden;
-  margin: 0;
-  padding: 0;
 }
 
 body {
   font-family: 'Georgia', serif;
   background-color: #ffffff;
+  margin: 0;
+  padding: 0;
   color: #000;
 }
 
 /* =========================
-  Main Container
+   Main Container
 ========================= */
 .menu-wrapper {
   padding: 40px 60px;
   min-height: 100vh;
   max-width: 1000px;
   margin: 0 auto;
-  width: 100%;
 }
 
 /* =========================
-  Header & Navigation
+   Header & Navigation
 ========================= */
 header {
   text-align: center;
@@ -53,19 +51,18 @@ header img {
 
 /* Navigation */
 nav {
-  margin: 0 0 10px 0;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 nav ul li {
+  display: inline;
   margin: 0 10px;
 }
 
@@ -81,7 +78,7 @@ nav ul li a:hover {
 }
 
 /* =========================
-  Restaurant Hours
+   Restaurant Hours
 ========================= */
 .hours {
   text-align: center;
@@ -94,7 +91,7 @@ nav ul li a:hover {
 }
 
 /* =========================
-  Feature Heading
+   Feature Heading
 ========================= */
 .start-day {
   text-align: center;
@@ -108,7 +105,7 @@ nav ul li a:hover {
 }
 
 /* =========================
-  Menu Columns
+   Menu Columns
 ========================= */
 .menu-columns {
   display: flex;
@@ -137,7 +134,7 @@ nav ul li a:hover {
 }
 
 /* =========================
-  Menu Items
+   Menu Items
 ========================= */
 .item-title {
   font-weight: bold;
@@ -161,7 +158,7 @@ nav ul li a:hover {
 }
 
 /* =========================
-  Footer
+   Footer
 ========================= */
 footer {
   text-align: center;
@@ -171,7 +168,7 @@ footer {
 }
 
 /* =========================
-  Plate Combos
+   Plate Combos
 ========================= */
 .plate-combos {
   margin-top: 50px;
@@ -209,7 +206,7 @@ footer {
 }
 
 /* =========================
-  Grande Pupusas
+   Grande Pupusas
 ========================= */
 .pupusas {
   margin-top: 36px;
@@ -268,52 +265,74 @@ footer {
 }
 
 /* =========================
-  Bundles Section
+   Bundles Section
 ========================= */
 .bundles {
-  margin-top: 24px;
-  text-align: left;
+  margin-top: 10px;
 }
 
 .bundles .item-title {
   font-family: 'Georgia', serif;
-  font-weight: 800;
+  font-weight: 700;
   text-transform: uppercase;
-  font-size: 1.45rem;
-  margin-bottom: 2px;
+  font-size: 1.6rem;
+  letter-spacing: 0.5px;
   color: #000;
+  margin-bottom: 5px;
 }
 
 .bundle-subtitle {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.3px;
-  margin-bottom: 8px;
   color: #333;
+  margin-bottom: 10px;
+  letter-spacing: 0.4px;
 }
 
-.bundle-list {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  margin-top: 4px;
-}
-
-.bundle-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
-
-.bundle-row .price {
-  font-weight: 700;
+.bundles .item-description {
   font-size: 1rem;
+  line-height: 1.5;
   color: #000;
 }
 
 /* =========================
-  Footnotes for Mixes
+   Specials Circle (Orange)
+========================= */
+.pupusa-col .specials {
+  margin-top: 10px;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 220px;
+  background-color: #fffceb;
+  border: 3px dashed orange;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(255,165,0,0.3);
+  text-align: center;
+  color: #000;
+}
+
+.pupusa-col .specials .item-title {
+  font-family: 'Georgia', serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #000;
+  margin-bottom: 6px;
+  text-shadow: 0 0 3px rgba(255,255,0,0.7);
+}
+
+.pupusa-col .specials .item-description {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+/* =========================
+   Footnotes for Mixes
 ========================= */
 .mixes {
   font-size: 0.9rem;
@@ -328,7 +347,7 @@ footer {
 }
 
 /* =========================
-  Entrees Section
+   Entrees Section
 ========================= */
 .entrees {
   text-align: center;
@@ -361,82 +380,55 @@ footer {
 
 /* Fiesta Plate Box */
 .special-box {
-  border: 3px dashed #5ac16a;
-  border-radius: 12px;
-  padding: 18px 22px;
-  background-color: #eaffea;
-  box-shadow:
-    inset 0 0 20px rgba(90,193,106,0.7),
-    0 0 14px rgba(90,193,106,0.6);
+  border: 2px solid #2e8b57;
+  border-radius: 6px;
+  padding: 20px;
+  background-color: #f7fff7;
+  box-shadow: 0 0 10px rgba(46,139,87,0.3);
   margin-bottom: 25px;
-  transition: box-shadow 0.2s ease-in-out;
 }
 
 .special-box .item-title {
-  font-weight: 800;
-  font-size: 1.1rem;
+  font-weight: 700;
   color: #000;
-  text-shadow: 0 0 6px rgba(90,193,106,0.7);
+  text-shadow: 0 0 3px rgba(50,205,50,0.4);
 }
 
 .special-box .item-description {
-  margin-top: 6px;
-  font-size: 1rem;
-  line-height: 1.55;
+  font-size: 0.96rem;
+  line-height: 1.5;
   color: #000;
 }
 
-/* --- Mi Gente layout --- */
-.migente {
-  border: 3px dashed #f55f5f;
-  border-radius: 12px;
-  padding: 18px 22px;
-  background-color: #fff5f5;
-  box-shadow:
-    inset 0 0 18px rgba(245,95,95,0.6),
-    0 0 10px rgba(245,95,95,0.4);
-  margin-top: 25px;
+/* Caribbean Heading */
+.caribbean-heading {
+  color: #0074d9;
+  font-family: "Brush Script MT", cursive;
+  font-size: 2em;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+  -webkit-text-stroke: 1px #040404;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 }
 
-.migente .item-title {
+/* Entree Items */
+.entrees .item-title {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
-  font-family: 'Georgia', serif;
-  font-weight: 800;
-  text-transform: uppercase;
-  font-size: 1.15rem;
-  color: #000;
-  text-shadow: 0 0 4px rgba(245,95,95,0.4);
-  margin-bottom: 6px;
-}
-
-.price-inline {
-  font-weight: 700;
-  font-size: 1rem;
+  font-weight: bold;
   color: #000;
 }
 
-.migente .item-description {
-  font-size: 0.98rem;
+.entrees .item-description {
+  font-size: 0.96rem;
   line-height: 1.45;
-  color: #000;
+  margin-bottom: 14px;
 }
 
-.migente-list {
-  list-style-type: disc;
-  margin: 6px 0 8px 35px;
-  padding: 0;
-  line-height: 1.35;
-}
-
-.migente-list li {
-  margin-bottom: 2px;
-}
-
-/* ======================================
-   Responsive Adjustments
-====================================== */
+/* =========================
+   Mobile Responsive
+========================= */
 @media (max-width: 768px) {
   .menu-wrapper {
     padding: 20px;
@@ -448,29 +440,213 @@ footer {
   }
 
   header img {
+    width: 100%;
     max-height: 300px;
   }
 
+  nav ul li {
+    display: block;
+    margin: 8px 0;
+  }
+
+  .menu-columns {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .menu-wrapper h2,
+  .menu-wrapper h3,
+  .menu-wrapper h4 {
+    font-size: clamp(20px, 5vw, 24px);
+    margin: 30px 0 12px;
+  }
+
+  .start-day {
+    font-size: 1.8em;
+  }
+
+  .pupusa-col .specials {
+    margin: 25px auto;
+  }
+
+  .special-box {
+    width: 90%;
+  }
+
+  footer {
+    font-size: 0.8em;
+    margin-top: 40px;
+  }
+}
+.entrees .item {
+  margin-bottom: 20px;
+}
+
+.entrees .item-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin-bottom: 5px;
+}
+
+.entrees .item-description {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  font-size: 1rem;
+  color: #000;
+  line-height: 1.6;
+  margin-top: 4px;
+  margin-bottom: 14px;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.entrees-column {
+  flex: 1;
+  min-width: 320px;
+  text-align: left;
+}
+
+/* Slightly more breathing room between Entree sections */
+.entrees-header {
+  margin-bottom: 30px;
+
+/* ============================= */
+/* Bright color glow refinements */
+/* ============================= */
+
+/* Fiesta Plate — true light green glow */
+.special-box {
+  border: 3px dashed #5ac16a;               
+  border-radius: 12px;
+  padding: 18px 22px;
+  background-color: #eaffea;               
+  box-shadow:
+    inset 0 0 20px rgba(90,193,106,0.7),    
+    0 0 14px rgba(90,193,106,0.6);         
+  margin-bottom: 25px;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.special-box .item-title {
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: #000;
+  text-shadow: 0 0 6px rgba(90,193,106,0.7); 
+}
+
+.special-box .item-description {
+  margin-top: 6px;
+  font-size: 1rem;
+  line-height: 1.55;
+  color: #000;
+}
+
+
+/* Mi Gente  */
+.migente {
+  border: 3px dashed #f55f5f;              
+  border-radius: 12px;
+  padding: 18px 22px;
+  background-color: #ffeaea;              
+  box-shadow:
+    inset 0 0 20px rgba(245,95,95,0.7),     
+    0 0 14px rgba(245,95,95,0.6);           
+  margin-top: 20px;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.migente .item-title {
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: #000;
+  text-shadow: 0 0 6px rgba(245,95,95,0.7); 
+}
+
+.migente .item-description {
+  margin-top: 6px;
+  font-size: 1rem;
+  line-height: 1.55;
+  color: #000;
+}
+/* Tighter bullets inside Mi Gente box */
+.migente-list {
+  list-style-type: disc;
+  margin: 4px 0 0 18px;    
+  padding: 0;
+  line-height: 1.4;        
+}
+
+.migente-list li {
+  margin-bottom: 3px;      
+}
+
+
+
+
+
+
+/* =========================
+   Mobile —layout
+========================= */
+
+@media (max-width: 768px) {
+
+  /* Reduce side padding and spacing */
+  .menu-wrapper {
+    padding: 15px;
+  }
+
+  header img {
+    width: 100%;
+    max-height: 240px;
+  }
+
   nav ul {
+    display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 6px;
   }
 
   nav ul li {
-    margin: 6px 0;
+    display: block;
+    margin: 4px 0;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
   }
 
   .menu-columns,
   .pupusa-columns,
   .entrees-header {
     flex-direction: column;
-    gap: 20px;
+    gap: 25px;
   }
 
   .menu-column,
   .pupusa-col,
   .entrees-column {
     min-width: 100%;
+  }
+
+  .item-title {
+    font-size: 1rem;
+  }
+
+  .price {
+    float: none;
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+  }
+
+  .start-day {
+    font-size: 1.8em;
   }
 
   .combo-row,
@@ -480,38 +656,14 @@ footer {
     text-align: center;
   }
 
-  .price {
-    float: none;
-    margin-top: 5px;
-  }
-
-  .start-day {
-    font-size: 1.8em;
-  }
-
-  .menu-wrapper h2,
-  .menu-wrapper h3,
-  .menu-wrapper h4 {
-    font-size: clamp(18px, 5vw, 22px);
-    margin: 30px 0 12px;
-  }
-
-  .special-box {
-    width: 90%;
-    margin: 0 auto 25px;
-  }
-
   footer {
     font-size: 0.8em;
-    margin-top: 40px;
+    margin-top: 30px;
+    padding: 10px;
   }
 }
 
-/* Extra small devices */
 @media (max-width: 480px) {
-  body {
-    font-size: 0.95rem;
-  }
 
   .menu-wrapper {
     padding: 10px;
@@ -525,12 +677,16 @@ footer {
     font-size: 1.5em;
   }
 
-  nav ul li a {
-    font-size: 1rem;
+  h2, h3, h4 {
+    font-size: 1.1em;
   }
 
-  footer {
-    font-size: 0.75em;
-    padding: 10px;
+  p, .item-description {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  nav ul li a {
+    font-size: 0.95rem;
   }
 }
