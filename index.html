@@ -29,6 +29,8 @@
     }
 
     header img {
+      max-width: 100%;
+      height: auto;
       max-height: 480px;
     }
 
@@ -43,7 +45,7 @@
     }
 
     nav ul li {
-      display: inline;
+      display: inline-block;
       margin: 0 15px;
     }
 
@@ -111,6 +113,82 @@
       font-size: 0.9em;
       color: #666;
     }
+
+    /* =========================
+       ✅ Mobile Responsive Fixes
+    ========================== */
+    @media (max-width: 768px) {
+      .wrapper {
+        padding: 20px;
+        border-width: 4px;
+      }
+
+      header img {
+        max-height: 300px;
+      }
+
+      nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+      }
+
+      nav ul li {
+        display: block;
+        margin: 6px 0;
+      }
+
+      nav ul li a {
+        font-size: 1rem;
+      }
+
+      .hero h2 {
+        font-size: 1.6em;
+      }
+
+      .hero p, p {
+        font-size: 1em;
+        line-height: 1.4;
+      }
+
+      h2 {
+        font-size: 1.3em;
+      }
+
+      footer {
+        font-size: 0.8em;
+        margin-top: 40px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .wrapper {
+        padding: 15px;
+        border-width: 3px;
+      }
+
+      nav ul li a {
+        font-size: 0.95rem;
+      }
+
+      .hero h2 {
+        font-size: 1.4em;
+      }
+
+      .hero p, p {
+        font-size: 0.95em;
+      }
+
+      h2 {
+        font-size: 1.1em;
+      }
+
+      footer {
+        font-size: 0.75em;
+        padding: 10px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -141,4 +219,13 @@
       <section>
         <h2>What's New</h2>
         <p>Now featuring seasonal Salvadorian classics like <strong>Yuca con Chicharrones</strong> and sweet <em>Platanos</em> — all freshly made in-house daily.</p>
-        <p>Can't visit in person? Order online or explore our recipes for a taste of home
+        <p>Can't visit in person? Order online or explore our recipes for a taste of home.</p>
+      </section>
+    </main>
+
+    <footer>
+      &copy; 2025 Selena's Salvadorian Restaurant. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
